@@ -16,10 +16,10 @@ cargo run -r
 
 ## AVX / Neon
 
-You can enable AVX or Neon support by using powdr's `simd` feature in the `Cargo.toml` file and run the host with extra flags:
+You can enable AVX or Neon support by using the `simd` feature and running the host with extra flags:
 
 ```bash
-RUSTFLAGS='-C target-cpu=native' cargo run -r
+RUSTFLAGS='-C target-cpu=native' cargo run --features simd -r
 ```
 
 ## Structure
