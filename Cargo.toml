@@ -1,0 +1,22 @@
+[package]
+name = "my-powdr-host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+powdr = { git = "https://github.com/powdr-labs/powdr", features = ["plonky3"] }
+
+# Uncomment for AVX/Neon prover support
+#powdr = { git = "https://github.com/powdr-labs/powdr", features = ["plonky3", "simd"] }
+
+serde = { version = "1.0", default-features = false, features = [
+  "alloc",
+  "derive",
+  "rc",
+] }
+serde_cbor = { version = "0.11.2", default-features = false, features = [
+  "alloc",
+] }
+
+env_logger = "0.10.2"
+log = "0.4.17"
