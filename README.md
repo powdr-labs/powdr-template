@@ -1,6 +1,9 @@
-# powdrVM template
+# powdrVM Usage Template
 
-This template is a basic structure for a powdrVM host/guest project.
+This is a foundational template for generating zero-knowledge proofs with powdrVM. You write the code to be proven as a guest program for the zkVM host. This template includes a structure for host/guest interaction, ZKP setup, and artifact generation.
+
+
+Guest programs are written in Rust. When creating your guest program, you can write Rust code in the usual way, including using std and importing packages others have written. We provide some additional powdrVM specific functionalities via system calls, such as IO operations for host <-> guest communication and precompiles to accelerate complex programs via optimized circuits.
 
 ## Dependencies
 
