@@ -1,6 +1,6 @@
 # powdrVM Usage Template
 
-This is a foundational template for developing and running zero-knowledge proofs on powdrVM. To prove code using PowdrVM, you need to write the code you want to be proven as a guest program for the zkVM host. This template includes a structure for host/guest interaction, ZKP setup, and artifact generation.
+This is a foundational template for generating zero-knowledge proofs with powdrVM. You write the code to be proven as a guest program for the zkVM host. This template includes a structure for host/guest interaction, ZKP setup, and artifact generation.
 
 
 Guest programs are written in Rust. When creating your guest program, you can write Rust code in the usual way, including using std and importing packages others have written. We provide some additional zkVM-specific functionality, most notably powdr_riscv_runtime::io::read for reading the input data.
