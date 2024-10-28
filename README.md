@@ -1,4 +1,4 @@
-# powdrVM Usager/Integration/Practitioner’s/Utility template
+# powdrVM Usage Template
 
 This is a foundational template for developing and running zero-knowledge proofs on powdrVM. To prove code using PowdrVM, you need to write the code you want to be proven as a guest program for the zkVM host. This template includes a structure for host/guest interaction, ZKP setup, and artifact generation.
 
