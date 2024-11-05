@@ -8,7 +8,7 @@ fn main() {
     // Create a new powdr session to make proofs for the `guest` crate.
     // Store all temporary and final artifacts in `powdr-target`.
     // Write `some_data` to channel 1 and the sum of `some_data` to channel 2.
-    let mut session = Session::new("./guest", "powdr-target")
+    let mut session = Session::builder().guest_path("./guest").out_path("powdr-target").build()
         .write(1, &some_data)
         .write(2, &some_data.iter().sum::<u32>());
 
